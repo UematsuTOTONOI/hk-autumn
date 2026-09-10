@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOTONOI 富士山中湖｜每座圓頂帳篷都可眺望富士山的豪華露營</title>
+  <meta name="description" content="在山中湖近距離欣賞富士山。TOTONOI 的圓頂帳篷均可眺望富士山，從新宿乘高速巴士亦可前往。品嚐以山梨當地食材打造的 BBQ，在整潔舒適的圓頂帳篷中享受特別的日本之旅。">
+  <meta name="robots" content="index,follow">
+  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+
+  <!-- Google Ads / GA4 / GTM 可在此加入 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root{
+      --ink:#19342c;
+      --ink2:#38564c;
+      --green:#244f40;
+      --green2:#4f7564;
+      --sage:#e8eee8;
+      --ivory:#f7f5ef;
+      --white:#fff;
+      --gold:#b89a67;
+      --line:#d9e1da;
+      --shadow:0 18px 50px rgba(19,52,43,.10);
+      --radius:26px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--ivory);
+      font-family:
+        "Noto Sans TC","PingFang TC","Microsoft JhengHei",
+        -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.75;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+
+    .container{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .eyebrow{
+      font-size:12px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-weight:800;
+      color:var(--green2);
+    }
+    .section{padding:92px 0}
+    .section-title{
+      margin:8px 0 18px;
+      font-size:clamp(32px,4vw,56px);
+      line-height:1.15;
+      letter-spacing:-.03em;
+    }
+    .section-lead{
+      max-width:760px;
+      color:#52675f;
+      font-size:17px;
+    }
+
+    /* HEADER */
+    .header{
+      position:absolute;
+      inset:0 0 auto 0;
+      z-index:20;
+      padding:20px 0;
+      color:#fff;
+    }
+    .header-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+    }
+    .brand-mark{
+      width:38px;height:38px;
+      border:1px solid rgba(255,255,255,.55);
+      border-radius:50%;
+      display:grid;place-items:center;
+      font-size:12px;
+    }
+    .header-actions{display:flex;gap:10px;align-items:center}
+    .lang{
+      border:1px solid rgba(255,255,255,.45);
+      border-radius:999px;
+      padding:9px 14px;
+      font-size:12px;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,.12);
+    }
+
+    /* BUTTON */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border-radius:999px;
+      min-height:54px;
+      padding:0 24px;
+      font-weight:800;
+      transition:.2s ease;
+      border:1px solid transparent;
+      cursor:pointer;
+    }
+    .btn-primary{
+      color:#fff;
+      background:var(--green);
+      box-shadow:0 10px 24px rgba(24,69,53,.22);
+    }
+    .btn-primary:hover{transform:translateY(-1px);background:#183f32}
+    .btn-light{
+      color:var(--ink);
+      background:#fff;
+    }
+    .btn-outline{
+      border-color:#bfcac3;
+      background:transparent;
+      color:var(--green);
+    }
+
+    /* HERO */
+    .hero{
+      position:relative;
+      min-height:790px;
+      color:#fff;
+      display:flex;
+      align-items:flex-end;
+      background:
+        linear-gradient(180deg,rgba(8,28,22,.13) 0%,rgba(8,28,22,.12) 36%,rgba(8,28,22,.72) 100%),
+        url("images/hero.webp") center/cover no-repeat;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:220px;
+      background:linear-gradient(180deg,transparent,rgba(5,23,18,.16));
+      pointer-events:none;
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      padding:180px 0 86px;
+      max-width:920px;
+    }
+    .hero-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      border:1px solid rgba(255,255,255,.38);
+      background:rgba(17,42,34,.22);
+      backdrop-filter:blur(12px);
+      border-radius:999px;
+      padding:9px 15px;
+      font-size:13px;
+      margin-bottom:22px;
+    }
+    .hero h1{
+      font-size:clamp(44px,7.4vw,94px);
+      line-height:1.03;
+      letter-spacing:-.045em;
+      margin:0 0 24px;
+      max-width:950px;
+    }
+    .hero h1 span{
+      display:block;
+      color:#f4efe3;
+      font-size:.62em;
+      margin-top:14px;
+      letter-spacing:-.02em;
+    }
+    .hero-copy{
+      font-size:clamp(17px,2vw,22px);
+      max-width:720px;
+      margin:0 0 30px;
+      color:rgba(255,255,255,.92);
+    }
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-points{
+      margin-top:38px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 26px;
+      font-size:14px;
+      color:rgba(255,255,255,.9);
+    }
+    .hero-points span::before{content:"✓";margin-right:8px}
+
+    /* CONVERSION STRIP */
+    .conversion-strip{
+      background:var(--green);
+      color:#fff;
+    }
+    .conversion-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
+    .conversion-item{
+      padding:25px 18px;
+      text-align:center;
+      border-right:1px solid rgba(255,255,255,.14);
+    }
+    .conversion-item:last-child{border-right:0}
+    .conversion-item strong{display:block;font-size:20px}
+    .conversion-item small{opacity:.72}
+
+    /* INTRO */
+    .intro{
+      background:
+        radial-gradient(circle at 90% 20%,#e1eadf 0,transparent 30%),
+        var(--ivory);
+    }
+    .intro-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:60px;
+      align-items:center;
+    }
+    .photo-card{
+      min-height:570px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:url("images/fuji-dome.webp") center/cover no-repeat;
+      box-shadow:var(--shadow);
+      position:relative;
+    }
+    .photo-card-label{
+      position:absolute;
+      left:22px;right:22px;bottom:22px;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(12px);
+      border-radius:18px;
+      padding:18px 20px;
+      color:var(--ink);
+      font-weight:800;
+    }
+    .big-copy{
+      font-size:clamp(34px,4.3vw,60px);
+      line-height:1.15;
+      margin:8px 0 24px;
+      letter-spacing:-.035em;
+    }
+    .big-copy em{font-style:normal;color:var(--green2)}
+    .bullet-list{
+      display:grid;
+      gap:14px;
+      margin:28px 0 0;
+      padding:0;
+      list-style:none;
+    }
+    .bullet-list li{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:17px;
+      padding:14px 16px;
+      font-weight:700;
+    }
+
+    /* FEATURES */
+    .features{background:#fff}
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:44px;
+    }
+    .feature-card{
+      background:var(--ivory);
+      border:1px solid #ece9df;
+      border-radius:22px;
+      padding:28px;
+      min-height:260px;
+    }
+    .feature-no{
+      width:42px;height:42px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:var(--green);
+      color:#fff;
+      font-weight:900;
+      margin-bottom:20px;
+    }
+    .feature-card h3{font-size:23px;line-height:1.3;margin:0 0 12px}
+    .feature-card p{color:#5b6d66;margin:0}
+
+    /* FULL BLEED STORY */
+    .story{
+      min-height:690px;
+      display:flex;
+      align-items:flex-end;
+      background:
+        linear-gradient(180deg,rgba(11,33,26,.05),rgba(11,33,26,.72)),
+        url("images/fuji-aerial.webp") center/cover no-repeat;
+      color:#fff;
+    }
+    .story-box{
+      max-width:760px;
+      padding:80px 0;
+    }
+    .story-box h2{
+      font-size:clamp(38px,5vw,68px);
+      line-height:1.12;
+      margin:0 0 18px;
+    }
+    .story-box p{font-size:18px;color:rgba(255,255,255,.88)}
+
+    /* ROOM */
+    .rooms{background:var(--sage)}
+    .room-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:20px;
+      margin-top:42px;
+    }
+    .room-photo{
+      min-height:590px;
+      border-radius:24px;
+      background:url("images/room-bright.webp") center/cover no-repeat;
+      box-shadow:var(--shadow);
+    }
+    .room-panel{
+      border-radius:24px;
+      background:#fff;
+      padding:38px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .room-panel h3{font-size:34px;line-height:1.2;margin:8px 0 18px}
+    .room-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+    .tag{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:7px 11px;
+      font-size:12px;
+      background:#fbfcf8;
+    }
+
+    /* FOOD */
+    .food{background:#fff}
+    .food-grid{
+      display:grid;
+      grid-template-columns:.88fr 1.12fr;
+      gap:42px;
+      align-items:center;
+    }
+    .food-gallery{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .food-img{
+      min-height:240px;
+      border-radius:20px;
+      background-size:cover;
+      background-position:center;
+    }
+    .food-img:first-child{
+      grid-column:1/-1;
+      min-height:340px;
+      background-image:url("images/food-main.webp");
+    }
+    .food-img:nth-child(2){background-image:url("images/food-grill.webp")}
+    .food-img:nth-child(3){background-image:url("images/rainbow-trout.webp")}
+    .food-list{
+      display:grid;
+      gap:11px;
+      padding:0;
+      list-style:none;
+      margin:24px 0 0;
+    }
+    .food-list li{
+      border-bottom:1px solid var(--line);
+      padding:0 0 11px;
+    }
+
+    /* ACCESS */
+    .access{background:var(--ivory)}
+    .access-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:42px;
+    }
+    .access-card{
+      background:#fff;
+      border-radius:22px;
+      padding:32px;
+      border:1px solid var(--line);
+    }
+    .access-card .icon{font-size:34px}
+    .access-card h3{font-size:25px;margin:14px 0 10px}
+    .route{
+      margin-top:22px;
+      display:grid;
+      gap:12px;
+    }
+    .route-step{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+    .route-step b{
+      width:28px;height:28px;
+      flex:0 0 28px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:var(--sage);
+      color:var(--green);
+    }
+
+    /* EXPERIENCE GALLERY */
+    .experience{background:#f5f1e8}
+    .experience-grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      grid-auto-rows:210px;
+      gap:12px;
+      margin-top:42px;
+    }
+    .experience-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:22px;
+      background-size:cover;
+      background-position:center;
+      box-shadow:0 10px 30px rgba(30,48,38,.08);
+    }
+    .experience-card::after{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,transparent 42%,rgba(8,25,20,.68));
+    }
+    .experience-card .cap{
+      position:absolute;left:18px;right:18px;bottom:14px;z-index:2;color:#fff;
+    }
+    .experience-card .cap small{display:block;opacity:.78;font-size:10px;letter-spacing:.12em}
+    .experience-card .cap strong{font-size:17px}
+    .experience-card.a{grid-column:span 7;grid-row:span 2;background-image:url("images/checkin.webp")}
+    .experience-card.b{grid-column:span 5;background-image:url("images/dinner.webp")}
+    .experience-card.c{grid-column:span 5;background-image:url("images/sauna.webp")}
+    .experience-card.d{grid-column:span 4;background-image:url("images/bonfire-fuji.webp")}
+    .experience-card.e{grid-column:span 4;background-image:url("images/family.webp")}
+    .experience-card.f{grid-column:span 4;background-image:url("images/private-garden.webp")}
+
+    /* FAQ */
+    .faq{background:#fff}
+    details{
+      border-top:1px solid var(--line);
+      padding:20px 0;
+    }
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      font-size:17px;
+      list-style:none;
+    }
+    details p{color:#5e7068;margin:12px 0 0}
+
+    /* CTA */
+    .final-cta{
+      padding:100px 0;
+      color:#fff;
+      background:
+        linear-gradient(rgba(19,57,44,.82),rgba(19,57,44,.90)),
+        url("images/cta.webp") center/cover no-repeat;
+      text-align:center;
+    }
+    .final-cta h2{
+      font-size:clamp(38px,5vw,68px);
+      line-height:1.12;
+      margin:8px auto 20px;
+      max-width:900px;
+    }
+    .final-cta p{max-width:680px;margin:0 auto 28px;color:rgba(255,255,255,.85)}
+
+    /* FOOTER */
+    footer{
+      background:#112d24;
+      color:#dfe7e3;
+      padding:36px 0;
+      font-size:13px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    /* INFLUENCER VIDEO */
+    .video-section{background:#eef3ec}
+    .video-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:40px;
+    }
+    .video-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 10px 28px rgba(19,52,43,.06);
+    }
+    .video-frame{position:relative;padding-top:56.25%;background:#111}
+    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-copy{padding:20px 22px 23px}
+    .video-copy small{display:block;color:var(--green2);font-weight:800;letter-spacing:.06em;margin-bottom:6px}
+    .video-copy h3{font-size:21px;line-height:1.4;margin:0 0 8px}
+    .video-copy p{margin:0;color:#62736c;font-size:14px}
+
+    /* COUPON */
+    .coupon-section{background:#fff}
+    .coupon-box{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:28px;
+      align-items:center;
+      padding:38px 42px;
+      border-radius:26px;
+      color:#fff;
+      background:linear-gradient(135deg,#1f5a43,#123d30);
+      box-shadow:var(--shadow);
+    }
+    .coupon-kicker{font-size:12px;letter-spacing:.16em;font-weight:900;color:#dfece5}
+    .coupon-box h2{font-size:clamp(30px,4vw,48px);line-height:1.15;margin:8px 0 12px}
+    .coupon-box p{margin:0;color:rgba(255,255,255,.82)}
+    .coupon-code{
+      min-width:210px;
+      text-align:center;
+      padding:20px 24px;
+      border:1px dashed rgba(255,255,255,.55);
+      border-radius:18px;
+      background:rgba(255,255,255,.08);
+    }
+    .coupon-code span{display:block;font-size:11px;letter-spacing:.12em;opacity:.76}
+    .coupon-code strong{display:block;font-size:31px;letter-spacing:.06em;margin-top:4px}
+    .coupon-note{
+      margin-top:16px;
+      padding:13px 15px;
+      border-radius:13px;
+      background:#f5f1e6;
+      color:#705f3e;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    /* MOBILE STICKY */
+    .mobile-cta{display:none}
+
+    @media(max-width:920px){
+      .intro-grid,.room-grid,.food-grid,.access-grid,.video-grid{grid-template-columns:1fr}
+      .experience-grid{grid-template-columns:1fr 1fr;grid-auto-rows:240px}
+      .experience-card.a,.experience-card.b,.experience-card.c,.experience-card.d,.experience-card.e,.experience-card.f{grid-column:span 1;grid-row:span 1}
+      .coupon-box{grid-template-columns:1fr}
+      .coupon-code{min-width:0;width:100%}
+      .feature-grid{grid-template-columns:1fr 1fr}
+      .room-photo{min-height:480px}
+      .conversion-grid{grid-template-columns:1fr 1fr}
+      .conversion-item:nth-child(2){border-right:0}
+      .conversion-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.14)}
+    }
+
+    @media(max-width:640px){
+      body{padding-bottom:72px}
+      .container{width:min(calc(100% - 28px),var(--max))}
+      .header{padding:14px 0}
+      .brand{font-size:13px}
+      .brand-mark{width:32px;height:32px}
+      .header .btn{display:none}
+      .hero{min-height:700px}
+      .hero-content{padding:150px 0 66px}
+      .hero h1{font-size:48px}
+      .hero h1 span{font-size:.58em}
+      .hero-copy{font-size:16px}
+      .hero-actions{display:grid}
+      .hero-actions .btn{width:100%}
+      .hero-points{display:grid;gap:6px}
+      .section{padding:66px 0}
+      .feature-grid{grid-template-columns:1fr}
+      .conversion-item{padding:18px 8px}
+      .conversion-item strong{font-size:16px}
+      .conversion-item small{font-size:11px}
+      .photo-card{min-height:460px}
+      .room-photo{min-height:420px}
+      .room-panel{padding:26px}
+      .food-img:first-child{min-height:260px}
+      .food-img{min-height:170px}
+      .story{min-height:560px}
+      .experience-grid{grid-template-columns:1fr;grid-auto-rows:250px}
+      .experience-card.a,.experience-card.b,.experience-card.c,.experience-card.d,.experience-card.e,.experience-card.f{grid-column:1;grid-row:auto}
+      .mobile-cta{
+        position:fixed;
+        left:0;right:0;bottom:0;
+        z-index:100;
+        display:grid;
+        grid-template-columns:.85fr 1.15fr;
+        gap:8px;
+        padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+        background:rgba(255,255,255,.94);
+        backdrop-filter:blur(16px);
+        border-top:1px solid #dce3df;
+      }
+      .mobile-cta a{
+        min-height:50px;
+        border-radius:999px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight:900;
+        font-size:14px;
+      }
+      .mobile-cta .sub{border:1px solid var(--line);color:var(--green)}
+      .mobile-cta .main{background:var(--green);color:#fff}
+    }
+  
+    /* v6 Hong Kong luxury campaign */
+    .hk-ribbon{position:absolute;top:0;left:0;right:0;z-index:30;background:linear-gradient(90deg,#8c6b39,#c1a367,#8c6b39);color:#fff;text-align:center;padding:8px 12px;font-size:11px;letter-spacing:.05em;font-weight:800}.hk-ribbon strong{font-size:13px;letter-spacing:.08em}.header{top:34px}.hero-offer{display:inline-flex;align-items:center;gap:12px;margin:0 0 16px;background:rgba(15,39,31,.42);border:1px solid rgba(222,199,158,.65);backdrop-filter:blur(12px);border-radius:14px;padding:10px 14px;color:#fff}.hero-offer b{font:700 26px/1 Georgia,serif;color:#f1ddba}.hero-offer span{font-size:11px;line-height:1.4}.hero-offer code{font-family:inherit;font-weight:900;letter-spacing:.08em;color:#f1ddba}.coupon-box{background:linear-gradient(135deg,#102f25,#1c4938)!important;border:1px solid rgba(190,154,93,.55)!important;box-shadow:0 26px 66px rgba(18,51,40,.18)!important}.coupon-code{border-color:#c4a46c!important;background:#fffdf8!important;color:#173f32!important}.coupon-code strong{font-family:Georgia,serif;font-size:38px!important}.coupon-kicker{color:#dcc8a3!important}@media(max-width:640px){.hk-ribbon{font-size:9px;padding:7px 6px}.header{top:30px}.hero-offer{gap:8px;padding:8px 10px}.hero-offer b{font-size:22px}.hero-offer span{font-size:9px}}
+</style>
+</head>
+
+<body><div class="hk-ribbon">🇭🇰 香港旅客限定｜一泊兩餐方案 <strong>5% OFF</strong>｜CODE <strong>HKTO26</strong></div>
+  <!--
+  ================================================================
+  TOTONOI 香港向け Google広告 LP v5
+  ------------------------------------------------
+  画像は images/ フォルダ内の下記ファイル名を差し替えてください。
+  hero-mt-fuji.jpg / 富士山＋ドーム FV
+  fuji-dome-view.jpg / 富士山＋朝の滞在イメージ
+  mt-fuji-evening.jpg / 富士山＋焚き火
+  dome-interior.jpg / ドーム室内
+  yamanashi-bbq.jpg / 食事全景
+  koshu-beef.jpg / BBQ調理写真
+  rainbow-trout.jpg / 飯盒・焚き火体験
+  cta-bg.jpg / 夜の施設全景
+  day-*.jpg / 滞在体験ギャラリー
+
+  予約URLは下記の https://reserve.489ban.net/client/g-totonoi/2/plan を実際のURLへ置換してください。
+  ================================================================
+  -->
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">△</span>
+        <span>TOTONOI<br>富士山中湖</span>
+      </a>
+      <div class="header-actions">
+        <span class="lang">繁體中文｜香港</span>
+        <a class="btn btn-light" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看空房</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-offer"><b>5% OFF</b><span>香港旅客限定優惠<br>一泊兩餐方案・CODE <code>HKTO26</code></span></div><div class="hero-kicker">日本・山梨・山中湖｜MT. FUJI GLAMPING</div>
+        <h1>
+          不是遠望富士山。
+          <span>而是在富士山面前醒來。</span>
+        </h1>
+        <p class="hero-copy">
+          在山中湖，入住每一座都能眺望富士山的圓頂豪華露營。
+          清晨、黃昏、星空下——感受一天之中不斷變化的富士山景色。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看日期及房價 →</a>
+          <a class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.55)" href="#why">了解 TOTONOI</a>
+        </div>
+        <div class="hero-points">
+          <span>每座圓頂帳篷均可眺望富士山</span>
+          <span>從新宿乘高速巴士亦可前往</span>
+          <span>山梨地道食材 BBQ</span>
+          <span>冷暖氣設備・私人衛浴</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK VALUE -->
+    <section class="conversion-strip">
+      <div class="container conversion-grid">
+        <div class="conversion-item"><strong>富士山景觀</strong><small>每座 Dome 都可欣賞</small></div>
+        <div class="conversion-item"><strong>7 座限定</strong><small>寧靜、私密的住宿體驗</small></div>
+        <div class="conversion-item"><strong>巴士可達</strong><small>不自駕也能安排旅程</small></div>
+        <div class="conversion-item"><strong>山梨美食</strong><small>牛肉・虹鱒・時令蔬菜</small></div>
+      </div>
+    </section>
+
+    <!-- FUJI VALUE -->
+    <section class="section intro" id="why">
+      <div class="container intro-grid">
+        <div class="photo-card">
+          <div class="photo-card-label">
+            從自己的圓頂帳篷前，欣賞真正近距離的富士山。
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">THE VIEW OF MT. FUJI</div>
+          <h2 class="big-copy">
+            香港出發的日本旅行，<br>
+            留一晚給<em>真正的富士山</em>。
+          </h2>
+          <p>
+            很多人到日本旅行都想看一次富士山。TOTONOI 位於山中湖，
+            最大的魅力不是「去景點拍一張照片」，而是把富士山變成住宿的一部分。
+            拉開窗簾、走出圓頂帳篷，眼前就是富士山。
+          </p>
+          <ul class="bullet-list">
+            <li>✓ 所有圓頂住宿均為富士山景觀</li>
+            <li>✓ 朝早、黃昏、不同天氣都能感受不同表情</li>
+            <li>✓ 適合情侶、家庭及朋友旅行</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 REASONS -->
+    <section class="section features">
+      <div class="container">
+        <div class="eyebrow">WHY TOTONOI</div>
+        <h2 class="section-title">值得專程住一晚的 5 個理由</h2>
+        <p class="section-lead">
+          如果廣告從香港帶來的是「想看富士山、想住得特別、又不想太麻煩」的旅客，
+          這五點就是 TOTONOI 最直接的答案。
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-no">01</div>
+            <h3>每一座圓頂帳篷<br>都看得到富士山</h3>
+            <p>不用抽「景觀房」。富士山就是 TOTONOI 的主角，從自己的住宿空間享受山中湖特有的景致。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-no">02</div>
+            <h3>不用自駕<br>巴士也可以來</h3>
+            <p>由東京新宿可乘高速巴士前往山中湖一帶，適合不想在日本租車的香港旅客。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-no">03</div>
+            <h3>把山梨的味道<br>放進晚餐</h3>
+            <p>甲州牛、富士湧水養殖虹鱒、富士櫻豬及當地時令蔬菜，以豪華露營 BBQ 的方式品嚐。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-no">04</div>
+            <h3>乾淨舒適的 Dome<br>第一次 Glamping 也安心</h3>
+            <p>圓頂帳篷配備冷暖氣，客房設有專用洗手間及淋浴空間。享受戶外氣氛，同時保留住宿舒適度。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-no">05</div>
+            <h3>不是只有住宿<br>而是一整晚的體驗</h3>
+            <p>私人花園、營火，以及可選擇的私人桑拿。從下午到夜晚，再到富士山下的清晨。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMOTIONAL FUJI -->
+    <section class="story">
+      <div class="container">
+        <div class="story-box">
+          <div class="eyebrow" style="color:#dfe8df">MORNING TO NIGHT</div>
+          <h2>富士山，不只是一張相。</h2>
+          <p>
+            下午抵達時的富士山、黃昏變色的天空、夜晚的星空，
+            還有翌日早上第一眼看到的山頂。住在山中湖，才有時間真正感受它。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONG KONG INFLUENCER VIDEO -->
+    <section class="section video-section" id="reviews">
+      <div class="container">
+        <div class="eyebrow">SEEN BY HONG KONG TRAVELLERS</div>
+        <h2 class="section-title">香港旅客眼中的 TOTONOI</h2>
+        <p class="section-lead">
+          想先看看實際入住感覺？以下是香港創作者到訪 TOTONOI 時拍攝的影片。
+          從富士山景色、Dome 空間到晚餐體驗，都可以更直觀地感受。
+        </p>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/Dc2gIxzC00g" title="Hong Kong influencer at TOTONOI 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-copy">
+              <small>HONG KONG CREATOR VISIT</small>
+              <h3>實際入住 TOTONOI 的富士山 Glamping 體驗</h3>
+              <p>先用影片感受圓頂帳篷、富士山景觀及現場氣氛。</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/rQcIAtjzHTQ" title="Hong Kong influencer at TOTONOI 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-copy">
+              <small>HONG KONG CREATOR VISIT</small>
+              <h3>從香港旅客角度看看山中湖的一晚</h3>
+              <p>看看實際旅程中，TOTONOI 如何融入富士山行程。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="section rooms">
+      <div class="container">
+        <div class="eyebrow">CLEAN & COMFORTABLE</div>
+        <h2 class="section-title">有戶外感，也有酒店般的安心。</h2>
+
+        <div class="room-grid">
+          <div class="room-photo"></div>
+          <div class="room-panel">
+            <div class="eyebrow">DOME GLAMPING</div>
+            <h3>明亮、整潔、冷暖氣完備的圓頂帳篷</h3>
+            <p>
+              想體驗 Glamping，又擔心帳篷不夠舒適？TOTONOI 的 Dome 以乾淨舒適為重點，
+              讓第一次豪華露營的旅客也能輕鬆入住。
+            </p>
+            <div class="room-tags">
+              <span class="tag">富士山景觀</span>
+              <span class="tag">冷暖氣</span>
+              <span class="tag">私人花園</span>
+              <span class="tag">客房專用洗手間・淋浴</span>
+            </div>
+            <p style="margin:18px 0 0;color:#6a7b72;font-size:13px">乾淨的床品、洗手空間與客房備品都已準備好。想看更多房內設備，可前往客房詳細頁。</p>
+            <div style="margin-top:28px">
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn btn-primary" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看住宿選擇 →</a>
+                <a class="btn btn-outline" href="rooms.html">查看房型詳情</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD -->
+    <section class="section food">
+      <div class="container food-grid">
+        <div class="food-gallery">
+          <div class="food-img"></div>
+          <div class="food-img"></div>
+          <div class="food-img"></div>
+        </div>
+
+        <div>
+          <div class="eyebrow">TASTE OF YAMANASHI</div>
+          <h2 class="section-title">旅行的一晚，吃進山梨的味道。</h2>
+          <p class="section-lead">
+            TOTONOI 的餐食不是普通燒烤。以山梨縣及富士山周邊食材為主角，
+            在自己的用餐空間慢慢享用。
+          </p>
+
+          <ul class="food-list">
+            <li><strong>甲州牛</strong> — 山梨代表性的牛肉</li>
+            <li><strong>富士湧水養殖虹鱒</strong> — 鮮味細緻的山梨食材</li>
+            <li><strong>富士櫻豬</strong> — 山梨縣產豬肉</li>
+            <li><strong>當地時令蔬菜</strong> — 用季節食材感受山梨</li>
+          </ul>
+
+          <p style="font-size:12px;color:#7b8781;margin-top:18px">
+            ※餐單內容可能因季節及供應情況而變更。
+          </p>
+          <p style="margin-top:22px"><a class="btn btn-outline" href="meal.html">查看餐點詳情 →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- A DAY AT TOTONOI -->
+    <section class="section experience">
+      <div class="container">
+        <div class="eyebrow">A DAY AT TOTONOI</div>
+        <h2 class="section-title">從 Check-in 到清晨，富士山下的一晚。</h2>
+        <p class="section-lead">
+          TOTONOI 的魅力不只是睡一晚。抵達、BBQ、桑拿、營火、庭園時間——
+          讓山中湖的一晚本身成為旅程中的目的地。
+        </p>
+        <div class="experience-grid">
+          <div class="experience-card a"><div class="cap"><small>CHECK IN</small><strong>抵達 TOTONOI，開始山中湖的一晚</strong></div></div>
+          <div class="experience-card b"><div class="cap"><small>DINNER</small><strong>在私人空間享用 BBQ</strong></div></div>
+          <div class="experience-card c"><div class="cap"><small>SAUNA</small><strong>在自然中放鬆身心</strong></div></div>
+          <div class="experience-card d"><div class="cap"><small>BONFIRE</small><strong>夜晚圍著營火慢慢聊天</strong></div></div>
+          <div class="experience-card e"><div class="cap"><small>FAMILY</small><strong>寬敞草地，家庭旅行也自在</strong></div></div>
+          <div class="experience-card f"><div class="cap"><small>PRIVATE GARDEN</small><strong>在專屬庭院，享受只屬於自己的時間</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESS -->
+    <section class="section access" id="access">
+      <div class="container">
+        <div class="eyebrow">EASY ACCESS</div>
+        <h2 class="section-title">不自駕，也可以把山中湖排進行程。</h2>
+        <p class="section-lead">
+          對香港旅客來說，「富士山很想去，但交通好像很複雜」往往是最大的障礙。
+          TOTONOI 的賣點之一，就是從東京方向使用高速巴士也可以前往山中湖。
+        </p>
+
+        <div class="access-grid">
+          <article class="access-card">
+            <div class="icon">🚌</div>
+            <h3>由東京・新宿出發</h3>
+            <p>由新宿高速巴士總站可乘車前往「山中湖平野」巴士站，下車後步行約 5 分鐘即可抵達。</p>
+            <div class="route">
+              <div class="route-step"><b>1</b><div><strong>東京 / 新宿</strong><br><small>搭乘前往山中湖方向的高速巴士</small></div></div>
+              <div class="route-step"><b>2</b><div><strong>山中湖平野巴士站</strong><br><small>下車後步行約 5 分鐘 → TOTONOI</small></div></div>
+            </div>
+            <p style="font-size:12px;color:#7b8781;margin-top:18px">
+              ※實際巴士班次、停靠站及所需時間請於出發前確認最新交通資訊。
+            </p>
+          </article>
+
+          <article class="access-card">
+            <div class="icon">🚗</div>
+            <h3>自駕亦非常方便</h3>
+            <p>如行程包含河口湖、御殿場或其他富士山周邊景點，自駕可以更自由地安排行程。</p>
+            <div class="route">
+              <div class="route-step"><b>✓</b><div><strong>山中湖 IC 約 10 分鐘車程</strong><br><small>設有免費共用停車場</small></div></div>
+            </div>
+          </article>
+        </div>
+        <div style="margin-top:22px;text-align:center">
+          <a class="btn btn-outline" href="access.html">查看詳細交通方式 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONG KONG COUPON -->
+    <section class="section coupon-section" id="coupon">
+      <div class="container">
+        <div class="coupon-box">
+          <div>
+            <div class="coupon-kicker">HONG KONG LIMITED OFFER</div>
+            <h2>香港旅客限定｜住宿 5% OFF</h2>
+            <p>預訂時輸入優惠碼，即可享指定住宿方案 5% 折扣。</p>
+            <div class="coupon-note">※ 只適用於「1泊2食付き」一泊兩餐住宿方案。素泊まり／純住宿方案不適用。</div>
+          </div>
+          <div class="coupon-code">
+            <span>COUPON CODE</span>
+            <strong>HKTO26</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <div class="eyebrow">FAQ FOR HONG KONG TRAVELLERS</div>
+        <h2 class="section-title">香港旅客常見問題</h2>
+
+        <details open>
+          <summary>Q. 沒有在日本自駕也可以入住嗎？</summary>
+          <p>可以。從東京新宿方向可乘高速巴士前往山中湖一帶。建議預訂住宿後，同時確認當日最新巴士時間。</p>
+        </details>
+
+        <details>
+          <summary>Q. 所有圓頂帳篷都可以看到富士山嗎？</summary>
+          <p>是。TOTONOI 的住宿以富士山景觀為最大特色，圓頂住宿均可眺望富士山。實際可見程度會因天氣而異。</p>
+        </details>
+
+        <details>
+          <summary>Q. 圓頂帳篷內夏天或冬天會不會不舒服？</summary>
+          <p>圓頂帳篷配備冷暖氣，讓不同季節入住都更舒適。</p>
+        </details>
+
+        <details>
+          <summary>Q. 可以選擇包含晚餐的住宿方案嗎？</summary>
+          <p>可以。推薦選擇包含山梨當地食材 BBQ 的住宿方案，亦有不含餐的住宿選擇。</p>
+        </details>
+
+        <details>
+          <summary>Q. 香港限定優惠碼 HKTO26 可以用在哪些方案？</summary>
+          <p>優惠碼 HKTO26 可享 5% OFF，只適用於一泊兩餐住宿方案。純住宿（素泊まり）方案不適用。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="eyebrow" style="color:#dce9df">YOUR MT. FUJI NIGHT</div>
+        <h2>下一次日本旅行，<br>住在富士山面前。</h2>
+        <p>
+          東京行程加上一晚山中湖。看富士山、吃山梨美食，
+          在舒適的 Dome 住一晚，把「去過富士山」變成真正難忘的住宿體驗。
+          香港旅客預訂一泊兩餐方案時，記得使用優惠碼 <strong>HKTO26</strong> 享 5% OFF。
+        </p>
+        <a class="btn btn-light" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看空房及價格 →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>TOTONOI 富士山中湖</strong><br>Glamping Village TOTONOI Fuji Yamanakako</div>
+      <div>
+        <a href="rooms.html">客房</a> ・
+        <a href="meal.html">餐點</a> ・
+        <a href="access.html">交通</a><br>
+        山梨県南都留郡山中湖村平野295
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA -->
+  <div class="mobile-cta">
+    <a class="sub" href="#access">交通方法</a>
+    <a class="main" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看空房・預訂</a>
+  </div>
+
+  <script>
+    // Google Ads 用：予約ボタンクリックイベントのたたき台
+    document.querySelectorAll('a[href="https://reserve.489ban.net/client/g-totonoi/2/plan"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_booking', {
+            'event_category': 'LP',
+            'event_label': 'HongKong'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
