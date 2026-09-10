@@ -64,3 +64,127 @@ body{background:#f6f2ea;color:var(--ink)}
 .gold-btn{background:linear-gradient(135deg,#9b773f,#c6a66b)!important;color:#fff!important;box-shadow:0 10px 22px rgba(142,105,53,.22)}
 .meal-gallery-section{background:#f7f2e9}.meal-gallery img{height:310px}
 @media(max-width:760px){.brand-image{padding:6px 9px}.brand-image img{width:112px;max-height:34px}.roomtype{grid-template-columns:1fr;gap:14px;padding:12px;border-radius:19px}.roomtype.reverse .roomtype-gallery,.roomtype.reverse .roomtype-copy{order:initial}.roomtype-gallery{grid-template-columns:1fr 1fr;grid-template-rows:190px 130px}.roomtype-gallery img:first-child{grid-column:1/3;grid-row:1}.roomtype-copy{padding:8px 6px 10px}.roomtype-copy h3{font-size:28px}.meal-gallery img{height:220px}}
+
+/* ===== v8 layout repair / transparent logo / room & meal galleries ===== */
+img{max-width:100%;height:auto;display:block}
+.topin{min-width:0}
+.brand-image{
+  display:flex!important;
+  align-items:center;
+  flex:0 0 auto;
+  width:clamp(130px,15vw,175px);
+  height:auto;
+  padding:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+}
+.brand-image img{
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+.brand-light{background:transparent!important}
+.nav{min-width:0;flex-wrap:wrap;justify-content:flex-end}
+
+/* hero sizing: no stretched/cropped oversized blocks */
+.hero{overflow:hidden}
+.visual{
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:16 / 9;
+  max-height:590px;
+  background-size:cover;
+  background-position:center;
+}
+
+/* room cards */
+.roomtype-list{gap:34px}
+.roomtype{
+  grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr)!important;
+  gap:30px!important;
+  overflow:hidden;
+}
+.roomtype-gallery{
+  width:100%;
+  min-width:0;
+  display:grid!important;
+  grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr)!important;
+  grid-template-rows:1fr 1fr!important;
+  gap:8px!important;
+  aspect-ratio:1.45 / 1;
+  max-height:440px;
+}
+.roomtype-gallery img{
+  width:100%!important;
+  height:100%!important;
+  min-width:0;
+  min-height:0;
+  object-fit:cover!important;
+  border-radius:15px;
+}
+.roomtype-gallery img:first-child{grid-row:1 / 3!important}
+.roomtype-copy{min-width:0;padding:14px 18px!important}
+.roomtype-copy p{overflow-wrap:anywhere}
+.room-chips span{white-space:normal}
+
+/* supporting room photos keep one consistent ratio */
+.photo-grid{align-items:stretch}
+.photo-grid img{
+  height:auto!important;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+}
+
+/* meal images: editorial premium composition */
+.meal-photo-showcase{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:1.35fr .65fr .65fr;
+  grid-template-rows:220px 220px;
+  gap:10px;
+}
+.meal-photo-showcase figure{margin:0;position:relative;overflow:hidden;border-radius:20px;background:#eee7da}
+.meal-photo-showcase .meal-photo-main{grid-row:1/3}
+.meal-photo-showcase figure:nth-child(4){grid-column:2/4}
+.meal-photo-showcase img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.meal-photo-showcase figure:hover img{transform:scale(1.015)}
+.meal-photo-showcase figcaption{
+  position:absolute;left:10px;bottom:10px;
+  padding:5px 9px;border-radius:999px;
+  background:rgba(15,48,38,.78);color:#fff;
+  font-size:10px;font-weight:800;backdrop-filter:blur(8px)
+}
+
+@media(max-width:900px){
+  .roomtype{grid-template-columns:1fr!important}
+  .roomtype.reverse .roomtype-gallery,.roomtype.reverse .roomtype-copy{order:initial!important}
+  .roomtype-gallery{max-height:none;aspect-ratio:1.5 / 1}
+}
+
+@media(max-width:760px){
+  .topin{min-height:64px!important;gap:10px}
+  .brand-image{width:116px!important;max-width:32vw}
+  .nav{gap:8px!important}
+  .book{padding:9px 12px!important;font-size:12px}
+  .visual{aspect-ratio:4 / 3;max-height:none!important;border-radius:20px!important}
+  .roomtype{padding:10px!important;border-radius:20px!important;gap:12px!important}
+  .roomtype-gallery{
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:auto auto!important;
+    aspect-ratio:auto!important;
+    gap:6px!important;
+  }
+  .roomtype-gallery img{aspect-ratio:4/3;height:auto!important;border-radius:12px!important}
+  .roomtype-gallery img:first-child{grid-column:1/3!important;grid-row:1!important;aspect-ratio:16/10}
+  .roomtype-copy{padding:8px 6px 12px!important}
+  .roomtype-copy h3{font-size:27px!important}
+  .photo-grid{grid-template-columns:1fr!important}
+  .photo-grid img{aspect-ratio:16/10!important;height:auto!important}
+  .meal-photo-showcase{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:7px}
+  .meal-photo-showcase figure,.meal-photo-showcase .meal-photo-main,.meal-photo-showcase figure:nth-child(4){grid-column:auto;grid-row:auto}
+  .meal-photo-showcase .meal-photo-main{grid-column:1/3}
+  .meal-photo-showcase img{height:auto;aspect-ratio:4/3}
+  .meal-photo-showcase .meal-photo-main img{aspect-ratio:16/10}
+}
