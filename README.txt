@@ -50,3 +50,10 @@ v7 updates:
 - Private space/garden messaging refined.
 - Meal page removed outdoor BBQ/marshmallow photos and uses shokuji.zip food photos.
 - Access emojis removed and Tokyo approx. 100 min by car added.
+
+v9 changes:
+- Rebuilt header logos as transparent black/white logo assets.
+- White logo on photo/dark hero, black logo on white detail-page header.
+- Removed colored logo background blocks and normalized logo sizing.
+- Added official Instagram contact section to all pages.
+- Instagram: https://www.instagram.com/totonoi.fujiyamanakako/?hl=ja
