@@ -33,3 +33,20 @@ Google広告計測
 --------------
 index.html末尾に予約ボタンクリックの gtag イベント雛形があります。
 GA4 / Google Ads のIDを確定したらタグを追加してください。
+
+
+v5 更新
+- 首頁 DINNER 圖片改為 IMG_3481
+- PRIVATE TIME 改為 PRIVATE GARDEN，圖片改為 _X5A1339
+- 客房主圖與室內照更新
+- 客房頁新增備品／洗手間／簡易廚房照片
+- 餐點頁新增早餐照片
+- 新增圖片已縮小並 WebP 化
+
+
+v7 updates:
+- Uploaded logo applied.
+- Room page rebuilt with heya.zip photos and detailed 4 room types.
+- Private space/garden messaging refined.
+- Meal page removed outdoor BBQ/marshmallow photos and uses shokuji.zip food photos.
+- Access emojis removed and Tokyo approx. 100 min by car added.

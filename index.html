@@ -459,7 +459,7 @@
     .experience-card .cap small{display:block;opacity:.78;font-size:10px;letter-spacing:.12em}
     .experience-card .cap strong{font-size:17px}
     .experience-card.a{grid-column:span 7;grid-row:span 2;background-image:url("images/checkin.webp")}
-    .experience-card.b{grid-column:span 5;background-image:url("images/dinner.webp")}
+    .experience-card.b{grid-column:span 5;background-image:url("images/food-main.webp")}
     .experience-card.c{grid-column:span 5;background-image:url("images/sauna.webp")}
     .experience-card.d{grid-column:span 4;background-image:url("images/bonfire-fuji.webp")}
     .experience-card.e{grid-column:span 4;background-image:url("images/family.webp")}
@@ -640,6 +640,12 @@
   
     /* v6 Hong Kong luxury campaign */
     .hk-ribbon{position:absolute;top:0;left:0;right:0;z-index:30;background:linear-gradient(90deg,#8c6b39,#c1a367,#8c6b39);color:#fff;text-align:center;padding:8px 12px;font-size:11px;letter-spacing:.05em;font-weight:800}.hk-ribbon strong{font-size:13px;letter-spacing:.08em}.header{top:34px}.hero-offer{display:inline-flex;align-items:center;gap:12px;margin:0 0 16px;background:rgba(15,39,31,.42);border:1px solid rgba(222,199,158,.65);backdrop-filter:blur(12px);border-radius:14px;padding:10px 14px;color:#fff}.hero-offer b{font:700 26px/1 Georgia,serif;color:#f1ddba}.hero-offer span{font-size:11px;line-height:1.4}.hero-offer code{font-family:inherit;font-weight:900;letter-spacing:.08em;color:#f1ddba}.coupon-box{background:linear-gradient(135deg,#102f25,#1c4938)!important;border:1px solid rgba(190,154,93,.55)!important;box-shadow:0 26px 66px rgba(18,51,40,.18)!important}.coupon-code{border-color:#c4a46c!important;background:#fffdf8!important;color:#173f32!important}.coupon-code strong{font-family:Georgia,serif;font-size:38px!important}.coupon-kicker{color:#dcc8a3!important}@media(max-width:640px){.hk-ribbon{font-size:9px;padding:7px 6px}.header{top:30px}.hero-offer{gap:8px;padding:8px 10px}.hero-offer b{font-size:22px}.hero-offer span{font-size:9px}}
+
+    /* v7 logo / refined access */
+    .brand-logo{width:174px;max-height:74px;object-fit:contain;object-position:left center;filter:drop-shadow(0 2px 8px rgba(0,0,0,.12))}
+    .access-label{font-size:11px;letter-spacing:.17em;font-weight:900;color:var(--green2);margin-bottom:7px}
+    .time-highlight{display:inline-block;margin-top:16px;padding:8px 13px;border:1px solid #d4c09a;border-radius:999px;color:#765a2f;background:#fffaf0;font-weight:800;font-size:13px}
+    @media(max-width:640px){.brand-logo{width:142px;max-height:58px}}
 </style>
 </head>
 
@@ -665,12 +671,9 @@
 
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">△</span>
-        <span>TOTONOI<br>富士山中湖</span>
-      </a>
+      <a class="brand" href="#top"><img class="brand-logo" src="images/logo-white.webp" alt="Glamping Village TOTONOI Fujiyamanakako"></a>
       <div class="header-actions">
-        <span class="lang">繁體中文｜香港</span>
+        
         <a class="btn btn-light" href="https://reserve.489ban.net/client/g-totonoi/2/plan">查看空房</a>
       </div>
     </div>
@@ -778,7 +781,7 @@
           <article class="feature-card">
             <div class="feature-no">05</div>
             <h3>不是只有住宿<br>而是一整晚的體驗</h3>
-            <p>私人花園、營火，以及可選擇的私人桑拿。從下午到夜晚，再到富士山下的清晨。</p>
+            <p>約 100–150㎡ 的專屬私人庭院、營火，以及可選擇的私人桑拿。從下午到夜晚，再到富士山下的清晨。</p>
           </article>
         </div>
       </div>
@@ -910,7 +913,7 @@
         </p>
         <div class="experience-grid">
           <div class="experience-card a"><div class="cap"><small>CHECK IN</small><strong>抵達 TOTONOI，開始山中湖的一晚</strong></div></div>
-          <div class="experience-card b"><div class="cap"><small>DINNER</small><strong>在私人空間享用 BBQ</strong></div></div>
+          <div class="experience-card b"><div class="cap"><small>DINNER</small><strong>在專屬用餐棟品嚐山梨晚餐</strong></div></div>
           <div class="experience-card c"><div class="cap"><small>SAUNA</small><strong>在自然中放鬆身心</strong></div></div>
           <div class="experience-card d"><div class="cap"><small>BONFIRE</small><strong>夜晚圍著營火慢慢聊天</strong></div></div>
           <div class="experience-card e"><div class="cap"><small>FAMILY</small><strong>寬敞草地，家庭旅行也自在</strong></div></div>
@@ -931,7 +934,7 @@
 
         <div class="access-grid">
           <article class="access-card">
-            <div class="icon">🚌</div>
+            <div class="access-label">HIGHWAY BUS</div>
             <h3>由東京・新宿出發</h3>
             <p>由新宿高速巴士總站可乘車前往「山中湖平野」巴士站，下車後步行約 5 分鐘即可抵達。</p>
             <div class="route">
@@ -944,9 +947,9 @@
           </article>
 
           <article class="access-card">
-            <div class="icon">🚗</div>
+            <div class="access-label">BY CAR</div>
             <h3>自駕亦非常方便</h3>
-            <p>如行程包含河口湖、御殿場或其他富士山周邊景點，自駕可以更自由地安排行程。</p>
+            <p>如行程包含河口湖、御殿場或其他富士山周邊景點，自駕可以更自由地安排行程。</p><div class="time-highlight">從東京出發・約 100 分鐘</div>
             <div class="route">
               <div class="route-step"><b>✓</b><div><strong>山中湖 IC 約 10 分鐘車程</strong><br><small>設有免費共用停車場</small></div></div>
             </div>
