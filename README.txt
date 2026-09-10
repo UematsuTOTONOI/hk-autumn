@@ -57,3 +57,8 @@ v9 changes:
 - Removed colored logo background blocks and normalized logo sizing.
 - Added official Instagram contact section to all pages.
 - Instagram: https://www.instagram.com/totonoi.fujiyamanakako/?hl=ja
+
+v10
+- Fixed broken Instagram CTA caused by escaped newline text in CSS.
+- Removed inline SVG from the Instagram button to prevent global SVG styling conflicts.
+- Rebuilt Instagram contact CTA as a compact premium pill button on desktop/mobile.

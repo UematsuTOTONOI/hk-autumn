@@ -188,4 +188,39 @@ img{max-width:100%;height:auto;display:block}
   .meal-photo-showcase img{height:auto;aspect-ratio:4/3}
   .meal-photo-showcase .meal-photo-main img{aspect-ratio:16/10}
 }
-\n\n/* ===== v9 logo + Instagram contact ===== */\n.brand-image{width:190px!important;max-width:34vw!important;height:54px!important;display:flex!important;align-items:center!important;background:transparent!important;padding:0!important;overflow:visible!important}\n.brand-image img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:left center!important;display:block!important}\n.instagram-contact{background:#f4efe5;padding:54px 0;border-top:1px solid rgba(185,150,90,.18)}\n.instagram-card{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fffdf8;border:1px solid rgba(185,150,90,.28);border-radius:26px;padding:30px 34px;box-shadow:0 16px 38px rgba(21,48,38,.055)}\n.instagram-card .ig-kicker{font-size:10px;letter-spacing:.18em;color:#957747;font-weight:900;margin-bottom:6px}\n.instagram-card h2{font-family:\"Noto Serif TC\",\"Songti TC\",serif;font-size:28px;line-height:1.25;margin:0 0 8px}\n.instagram-card p{margin:0;color:#65756d;font-size:14px}\n.instagram-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 20px;border-radius:999px;background:#173f32;color:#fff!important;font-weight:900;font-size:13px;white-space:nowrap;box-shadow:0 8px 18px rgba(23,63,50,.16)}\n.instagram-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}\n@media(max-width:760px){.brand-image{width:132px!important;height:40px!important;max-width:42vw!important}.instagram-contact{padding:38px 0}.instagram-card{grid-template-columns:1fr;padding:22px 20px;border-radius:20px;gap:18px}.instagram-card h2{font-size:23px}.instagram-btn{width:100%}}\n
+
+
+/* ===== v9 logo + Instagram contact ===== */
+.brand-image{width:190px!important;max-width:34vw!important;height:54px!important;display:flex!important;align-items:center!important;background:transparent!important;padding:0!important;overflow:visible!important}
+.brand-image img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:left center!important;display:block!important}
+.instagram-contact{background:#f4efe5;padding:54px 0;border-top:1px solid rgba(185,150,90,.18)}
+.instagram-card{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fffdf8;border:1px solid rgba(185,150,90,.28);border-radius:26px;padding:30px 34px;box-shadow:0 16px 38px rgba(21,48,38,.055)}
+.instagram-card .ig-kicker{font-size:10px;letter-spacing:.18em;color:#957747;font-weight:900;margin-bottom:6px}
+.instagram-card h2{font-family:\"Noto Serif TC\",\"Songti TC\",serif;font-size:28px;line-height:1.25;margin:0 0 8px}
+.instagram-card p{margin:0;color:#65756d;font-size:14px}
+.instagram-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 20px;border-radius:999px;background:#173f32;color:#fff!important;font-weight:900;font-size:13px;white-space:nowrap;box-shadow:0 8px 18px rgba(23,63,50,.16)}
+.instagram-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+@media(max-width:760px){.brand-image{width:132px!important;height:40px!important;max-width:42vw!important}.instagram-contact{padding:38px 0}.instagram-card{grid-template-columns:1fr;padding:22px 20px;border-radius:20px;gap:18px}.instagram-card h2{font-size:23px}.instagram-btn{width:100%}}
+
+/* ===== v10 Instagram display repair ===== */
+.instagram-contact{padding:44px 0!important;background:#f7f3eb!important}
+.instagram-card{min-height:0!important;overflow:hidden!important}
+.instagram-btn{
+  width:auto!important;height:auto!important;min-width:188px!important;max-width:100%!important;
+  min-height:48px!important;padding:0 20px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  gap:10px!important;background:#173f32!important;color:#fff!important;
+  border-radius:999px!important;overflow:hidden!important;
+}
+.instagram-btn .ig-mark{
+  width:25px;height:25px;flex:0 0 25px;border:1px solid rgba(255,255,255,.65);
+  border-radius:7px;display:grid;place-items:center;font:700 9px/1 Arial,sans-serif;
+  letter-spacing:.04em;
+}
+@media(max-width:760px){
+  .instagram-contact{padding:32px 0!important}
+  .instagram-card{gap:15px!important;padding:20px 18px!important}
+  .instagram-card h2{font-size:21px!important}
+  .instagram-card p{font-size:12.5px!important;line-height:1.7!important}
+  .instagram-btn{width:100%!important;min-width:0!important;min-height:46px!important}
+}
